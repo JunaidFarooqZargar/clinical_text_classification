@@ -27,7 +27,6 @@ The project utilizes the mtsamples.csv dataset, which contains information about
 
 ```
   pip install pandas numpy scikit-learn
-}
 ```
 2. Clone the project repository from GitHub:
 ```
