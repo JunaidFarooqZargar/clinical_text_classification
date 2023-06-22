@@ -41,10 +41,15 @@ The project utilizes the mtsamples.csv dataset, which contains information about
 # How it works
 
 Data Preprocessing: The script loads the mtsamples.csv dataset and selects the relevant columns (transcription, medical_specialty, sample_name). Any rows with missing values are dropped.
+
 Data Splitting: The dataset is split into training and testing sets using a 70:30 ratio (can be changed). The training set is used for model training and the testing set for evaluating the model's performance.
+
 Feature Extraction: Text features are extracted using the TF-IDF (Term Frequency-Inverse Document Frequency) vectorizer. The training and testing data are transformed into vectorized representations.
+
 Model Selection and Fine-tuning: The script uses a Multinomial Naive Bayes classifier to classify the medical subspecialties. A grid search is performed to find the best value for the hyperparameter alpha using 5-fold cross-validation.
+
 Model Training and Evaluation: The best model obtained from the grid search is trained on the training data and evaluated on the testing data. The classification report, including precision, recall, and F1-score, is printed for the subspecialty classification using Multinomial Naive Bayes.
+
 
 # Results
 
