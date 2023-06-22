@@ -10,7 +10,22 @@ This project focuses on classifying medical texts into different medical subspec
 4. Use the following evaluation metrics (precision, recall, F1-score, support, macro avg, weighted avg, accuracy). Using more evaluation metrics is encouraged.
 5. Spend time commenting and explaining your code.
 
+# Dataset
 
+The dataset used in this project is named mtsamples.csv, which is a CSV file containing the following columns:
+
+- `#`: Transcription ID
+- `description`: Description of the transcription
+- `medical_specialty`: Subspecialty of medicine (target variable)
+- `sample_name`: Name of the sample
+- `transcription`: Clinical text transcription
+- `keywords`: Keywords associated with the transcription
+
+Note: Some of the transcriptions have labels that do not mention a subspecialty of medicine, but rather a type of note. These notes can be treated as overlaps and do not need to be classified into specific specialties.
+
+-----------------------------------------------------------
+# Clinical_3.ipynb File
+-----------------------------------------------------------
 # Requirements
 
 Python 3.x
@@ -28,10 +43,8 @@ The project utilizes the mtsamples.csv dataset, which contains information about
 ```
   pip install pandas numpy scikit-learn
 ```
-2. Clone the project repository from GitHub:
-```
-   git clone <repository_url>
-```
+2. Clone the project repository from GitHub
+
 3. Change to the project directory:
 ```
    cd medical-text-classification
@@ -66,4 +79,47 @@ Subspecialty of Medicine Classification Report using Multinomial Naive Bayes:
 ...
 
 ```
+
+
+
+-------------------------
+# clinical_2.ipynb file
+-------------------------
+
+## Requirements
+
+To run the project, the following requirements should be met:
+
+- Python 3.7 or above
+- Required Python libraries (scikit-learn, pandas, numpy, matplotlib, etc.)
+- Jupyter Notebook or JupyterLab
+
+## Project Structure
+
+The project consists of the following files:
+
+- `clinical_2.ipynb`: Jupyter Notebook containing the code for data preprocessing, feature extraction, model training, and evaluation.
+- `mtsamples.csv`: CSV file containing the sample transcriptions dataset.
+
+## Usage
+
+1. Clone the repository:
+  
+2. Install the required libraries. You can use pip to install the dependencies:
+
+
+3. Open the Jupyter Notebook
+
+4. Execute the code cells in the notebook sequentially to preprocess the data, extract features, train the classifiers, and evaluate their performance.
+
+5. Modify and fine-tune the classifiers and parameters according to your requirements. Experiment with different algorithms and techniques to improve the classification accuracy.
+
+## Results
+
+The project provides evaluation metrics such as precision, recall, F1-score, support, macro avg, weighted avg, and accuracy to assess the performance of the classifiers. The classification report and accuracy scores are displayed for each classifier tested.
+
+## License
+..
+
+
 
